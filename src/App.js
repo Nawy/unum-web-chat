@@ -1,6 +1,6 @@
 import React, {Component} from 'react';
 import CryptoJS from 'crypto-js'
-import './App.css';
+import Profile from "./containers/ProfileContainer";
 
 class App extends Component {
 
@@ -55,7 +55,7 @@ class App extends Component {
     render() {
         return (
             <div className="App">
-
+                <Profile />
                 Text For Encrypt:
                 <input type="text" value={this.state.textForEncrypt} onChange={this.handleTextForEncryptChange}/>
                 Key:
